@@ -78,7 +78,6 @@ export { BoardsService } from './services/BoardsService';
 export { CardsService } from './services/CardsService';
 export { ChecklistsService } from './services/ChecklistsService';
 export { CustomFieldsService } from './services/CustomFieldsService';
-export { DefaultService } from './services/DefaultService';
 export { EmojiService } from './services/EmojiService';
 export { EnterprisesService } from './services/EnterprisesService';
 export { LabelsService } from './services/LabelsService';

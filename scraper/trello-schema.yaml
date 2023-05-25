@@ -2019,7 +2019,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get an Action
       description: Get an Action
       operationId: get-actions-id
@@ -2093,7 +2093,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Update an Action
       description: Update a specific Action. Only comment actions can be updated.
         Used to edit the content of a comment.
@@ -2110,7 +2110,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Delete an Action
       description: Delete a specific action. Only comment actions can be deleted.
       operationId: delete-actions-id
@@ -2120,7 +2120,7 @@ paths:
           description: Success
   /actions/{id}/{field}:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get a specific field on an Action
       description: Get a specific property of an action
       operationId: get-actions-id-field
@@ -2147,7 +2147,7 @@ paths:
                 $ref: '#/components/schemas/Action'
   /actions/{id}/board:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get the Board for an Action
       description: Get the Board for an Action
       operationId: get-actions-id-board
@@ -2179,7 +2179,7 @@ paths:
                 $ref: '#/components/schemas/Board'
   /actions/{id}/card:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get the Card for an Action
       description: Get the card for an action
       operationId: get-actions-id-card
@@ -2212,7 +2212,7 @@ paths:
                 $ref: '#/components/schemas/Card'
   /actions/{id}/list:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get the List for an Action
       description: Get the List for an Action
       operationId: get-actions-id-list
@@ -2245,7 +2245,7 @@ paths:
                 $ref: '#/components/schemas/TrelloList'
   /actions/{id}/member:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get the Member of an Action
       description: Gets the member of an action (not the creator)
       operationId: get-actions-id-member
@@ -2278,7 +2278,7 @@ paths:
                 $ref: '#/components/schemas/Member'
   /actions/{id}/memberCreator:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get the Member Creator of an Action
       description: Get the Member who created the Action
       operationId: get-actions-id-membercreator
@@ -2311,7 +2311,7 @@ paths:
                 $ref: '#/components/schemas/Member'
   /actions/{id}/organization:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get the Organization of an Action
       description: Get the Organization of an Action
       operationId: get-actions-id-organization
@@ -2344,7 +2344,7 @@ paths:
                 $ref: '#/components/schemas/Organization'
   /actions/{id}/text:
     put:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Update a Comment Action
       description: Update a comment action
       operationId: put-actions-id-text
@@ -2374,7 +2374,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get Action's Reactions
       description: List reactions for an action
       operationId: get-actions-idaction-reactions
@@ -2399,7 +2399,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Create Reaction for Action
       description: Adds a new reaction to an action
       operationId: post-actions-idaction-reactions
@@ -2440,7 +2440,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Get Action's Reaction
       description: Get information for a reaction
       operationId: get-actions-idaction-reactions-id
@@ -2465,7 +2465,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [actions ]
+      tags: [ actions ]
       summary: Delete Action's Reaction
       description: Deletes a reaction
       operationId: delete-actions-idaction-reactions-id
@@ -2475,7 +2475,7 @@ paths:
           description: Success
   /actions/{idAction}/reactionsSummary:
     get:
-      tags: [actions ]
+      tags: [ actions ]
       summary: List Action's summary of Reactions
       description: List a summary of all reactions for an action
       operationId: get-actions-idaction-reactionsummary
@@ -2498,7 +2498,7 @@ paths:
         schema:
           type: string
     get:
-      tags: [applications ]
+      tags: [ applications ]
       summary: Get Application's compliance data
       description: ''
       operationId: applications-key-compliance
@@ -2508,7 +2508,7 @@ paths:
           description: Success
   /batch:
     get:
-      tags: [batch ]
+      tags: [ batch ]
       summary: Batch Requests
       description: Make up to 10 GET requests in a single, batched API call.
       operationId: get-batch
@@ -2527,7 +2527,7 @@ paths:
           description: Success
   /boards/{id}/memberships:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Memberships of a Board
       description: Get information about the memberships users have to the board.
       operationId: get-boards-id-memberships
@@ -2599,7 +2599,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get a Board
       description: Request a single board.
       operationId: get-boards-id
@@ -2751,7 +2751,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update a Board
       description: Update an existing board by id
       operationId: put-boards-id
@@ -2893,7 +2893,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Delete a Board
       description: Delete a board.
       operationId: delete-boards-id
@@ -2903,7 +2903,7 @@ paths:
           description: Success
   /boards/{id}/{field}:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get a field on a Board
       description: Get a single, specific field on a board
       operationId: get-boards-id-field
@@ -2929,7 +2929,7 @@ paths:
           description: Success
   /boards/{boardId}/actions:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Actions of a Board
       description: ''
       operationId: get-boards-id-actions
@@ -3035,7 +3035,7 @@ paths:
           description: Success
   /boards/{id}/cards/{idCard}:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get a Card on a Board
       description: Get a single Card on a Board.
       operationId: get-boards-id-cards-idcard
@@ -3147,7 +3147,7 @@ paths:
           description: Success
   /boards/{boardId}/boardStars:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get boardStars on a Board
       description: ''
       operationId: get-boards-id-boardstars
@@ -3178,7 +3178,7 @@ paths:
                     - $ref: '#/components/schemas/BoardStars'
   /boards/{id}/checklists:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Checklists on a Board
       description: Get all of the checklists on a Board.
       operationId: boards-id-checklists
@@ -3195,7 +3195,7 @@ paths:
           description: Success
   /boards/{id}/cards:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Cards on a Board
       description: Get all of the open Cards on a Board.
       operationId: get-boards-id-cards
@@ -3212,7 +3212,7 @@ paths:
           description: Success
   /boards/{id}/cards/{filter}:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get filtered Cards on a Board
       description: Get the Cards on a Board that match a given filter.
       operationId: get-boards-id-cards-filter
@@ -3241,7 +3241,7 @@ paths:
           description: Success
   /boards/{id}/customFields:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Custom Fields for Board
       description: Get the Custom Field Definitions that exist on a board.
       operationId: get-boards-id-customfields
@@ -3264,7 +3264,7 @@ paths:
                   $ref: '#/components/schemas/CustomField'
   /boards/{id}/labels:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Labels on a Board
       description: Get all of the Labels on a Board.
       operationId: get-boards-id-labels
@@ -3296,7 +3296,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Create a Label on a Board
       description: Create a new Label on a Board.
       operationId: post-boards-id-labels
@@ -3333,7 +3333,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Lists on a Board
       description: Get the Lists on a Board
       operationId: get-boards-id-lists
@@ -3385,7 +3385,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/TrelloList'
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Create a List on a Board
       description: Create a new List on a Board.
       operationId: post-boards-id-lists
@@ -3414,7 +3414,7 @@ paths:
                 $ref: '#/components/schemas/TrelloList'
   /boards/{id}/lists/{filter}:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get filtered Lists on a Board
       description: ''
       operationId: get-boards-id-lists-filter
@@ -3444,7 +3444,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get the Members of a Board
       description: Get the Members for a board
       operationId: get-boards-id-members
@@ -3453,7 +3453,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Invite Member to Board via email
       description: Invite a Member to a Board via their email address.
       operationId: put-boards-id-members
@@ -3507,7 +3507,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Add a Member to a Board
       description: Add a member to the board.
       operationId: put-boards-id-members-idmember
@@ -3536,7 +3536,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Remove Member from Board
       description: ''
       operationId: boardsidmembersidmember
@@ -3546,7 +3546,7 @@ paths:
           description: Success
   /boards/{id}/memberships/{idMembership}:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update Membership of Member on a Board
       description: Update an existing board by id
       operationId: put-boards-id-memberships-idmembership
@@ -3604,7 +3604,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/emailPosition:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update emailPosition Pref on a Board
       description: Update emailPosition Pref on a Board
       operationId: put-boards-id-myprefs-emailposition
@@ -3631,7 +3631,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/idEmailList:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update idEmailList Pref on a Board
       description: Change the default list that email-to-board cards are created in.
       operationId: put-boards-id-myprefs-idemaillist
@@ -3654,7 +3654,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/showListGuide:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update showListGuide Pref on a Board
       operationId: put-boards-id-myPrefs-showlistguide
       parameters:
@@ -3676,7 +3676,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/showSidebar:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update showSidebar Pref on a Board
       operationId: put-boards-id-myPrefs-showsidebar
       parameters:
@@ -3698,7 +3698,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/showSidebarActivity:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update showSidebarActivity Pref on a Board
       operationId: put-boards-id-myPrefs-showsidebaractivity
       parameters:
@@ -3720,7 +3720,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/showSidebarBoardActions:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update showSidebarBoardActions Pref on a Board
       operationId: put-boards-id-myPrefs-showsidebarboardactions
       parameters:
@@ -3742,7 +3742,7 @@ paths:
           description: Success
   /boards/{id}/myPrefs/showSidebarMembers:
     put:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Update showSidebarMembers Pref on a Board
       operationId: put-boards-id-myPrefs-showsidebarmembers
       parameters:
@@ -3764,7 +3764,7 @@ paths:
           description: Success
   /boards/:
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Create a Board
       description: Create a new board.
       operationId: post-boards
@@ -3936,7 +3936,7 @@ paths:
           description: Success
   /boards/{id}/calendarKey/generate:
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Create a calendarKey for a Board
       description: Create a new board.
       operationId: post-boards-id-calendarkey-generate
@@ -3953,7 +3953,7 @@ paths:
           description: Success
   /boards/{id}/emailKey/generate:
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Create a emailKey for a Board
       description: ''
       operationId: post-boards-id-emailkey-generate
@@ -3970,7 +3970,7 @@ paths:
           description: Success
   /boards/{id}/idTags:
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Create a Tag for a Board
       operationId: post-boards-id-idtags
       parameters:
@@ -3992,7 +3992,7 @@ paths:
           description: Success
   /boards/{id}/markedAsViewed:
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Mark Board as viewed
       description: ''
       operationId: post-boards-id-markedasviewed
@@ -4016,7 +4016,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Enabled Power-Ups on Board
       description: Get the enabled Power-Ups on a board
       operationId: get-boards-id-boardplugins
@@ -4031,7 +4031,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Plugin'
     post:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Enable a Power-Up on a Board
       description: Enable a Power-Up on a Board
       operationId: post-boards-id-boardplugins
@@ -4048,7 +4048,7 @@ paths:
           description: Success
   /boards/{id}/boardPlugins/{idPlugin}:
     delete:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Disable a Power-Up on a Board
       description: Disable a Power-Up on a board
       operationId: delete-boards-id-boardplugins
@@ -4071,7 +4071,7 @@ paths:
           description: Success
   /boards/{id}/plugins:
     get:
-      tags: [boards ]
+      tags: [ boards ]
       summary: Get Power-Ups on a Board
       description: List the Power-Ups on a board
       operationId: get-board-id-plugins
@@ -4102,7 +4102,7 @@ paths:
                 $ref: '#/components/schemas/Plugin'
   /cards:
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Create a new Card
       description: Create a new card
       operationId: post-cards
@@ -4264,7 +4264,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get a Card
       description: Get a card by its ID
       operationId: get-cards-id
@@ -4477,7 +4477,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Card'
     put:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Update a Card
       description: Update a card
       operationId: put-cards-id
@@ -4662,7 +4662,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Card'
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Delete a Card
       description: Delete a Card
       operationId: delete-cards-id
@@ -4672,7 +4672,7 @@ paths:
           description: Success
   /cards/{id}/{field}:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get a field on a Card
       description: Get a specific property of a card
       operationId: get-cards-id-field
@@ -4699,7 +4699,7 @@ paths:
                 $ref: '#/components/schemas/Card'
   /cards/{id}/actions:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get Actions on a Card
       description: List the Actions on a Card
       operationId: get-cards-id-actions
@@ -4745,7 +4745,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get Attachments on a Card
       description: List the attachments on a card
       operationId: get-cards-id-attachments
@@ -4781,7 +4781,7 @@ paths:
                   oneOf:
                     - $ref: '#/components/schemas/Attachment'
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Create Attachment On Card
       description: Create an Attachment to a Card
       operationId: post-cards-id-attachments
@@ -4844,7 +4844,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get an Attachment on a Card
       description: Get a specific Attachment on a Card.
       operationId: get-cards-id-attachments-idattachment
@@ -4874,7 +4874,7 @@ paths:
                   oneOf:
                     - $ref: '#/components/schemas/Attachment'
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Delete an Attachment on a Card
       description: Delete an Attachment
       operationId: deleted-cards-id-attachments-idattachment
@@ -4884,7 +4884,7 @@ paths:
           description: Success
   /cards/{id}/board:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get the Board the Card is on
       description: Get the board a card is on
       operationId: get-cards-id-board
@@ -4913,7 +4913,7 @@ paths:
           description: Success
   /cards/{id}/checkItemStates:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get checkItems on a Card
       description: Get the completed checklist items on a card
       operationId: get-cards-id-checkitemstates
@@ -4945,7 +4945,7 @@ paths:
           description: Success
   /cards/{id}/checklists:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get Checklists on a Card
       description: Get the checklists on a card
       operationId: get-cards-id-checklists
@@ -5025,7 +5025,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Create Checklist on a Card
       description: Create a new checklist on a card
       operationId: post-cards-id-checklists
@@ -5074,7 +5074,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get checkItem on a Card
       description: Get a specific checkItem on a card
       operationId: get-cards-id-checkitem-idcheckitem
@@ -5087,7 +5087,7 @@ paths:
           schema:
             oneOf:
               - type: string
-                enum: [all]
+                enum: [ all ]
               - type: array
                 items:
                   type: string
@@ -5099,13 +5099,13 @@ paths:
                     - due
                     - dueReminder
                     - idMember
-            default: [name, nameData, pos, state, due, dueReminder, idMember]
+            default: [ name, nameData, pos, state, due, dueReminder, idMember ]
       deprecated: false
       responses:
         '200':
           description: Success
     put:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Update a checkItem on a Card
       description: Update an item in a checklist on a card.
       operationId: put-cards-id-checkitem-idcheckitem
@@ -5162,7 +5162,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Delete checkItem on a Card
       description: Delete a checklist item
       operationId: delete-cards-id-checkitem-idcheckitem
@@ -5172,7 +5172,7 @@ paths:
           description: Success
   /cards/{id}/list:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get the List of a Card
       description: Get the list a card is in
       operationId: get-cards-id-list
@@ -5201,7 +5201,7 @@ paths:
           description: Success
   /cards/{id}/members:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get the Members of a Card
       description: Get the members on a card
       operationId: get-cards-id-members
@@ -5237,7 +5237,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get Members who have voted on a Card
       description: Get the members who have voted on a card
       operationId: get-cards-id-membersvoted
@@ -5260,7 +5260,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Add Member vote to Card
       description: Vote on the card for a given member.
       operationId: cardsidmembersvoted-1
@@ -5277,7 +5277,7 @@ paths:
           description: Success
   /cards/{id}/pluginData:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get pluginData on a Card
       description: Get any shared pluginData on a card.
       operationId: get-cards-id-plugindata
@@ -5301,7 +5301,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get Stickers on a Card
       description: Get the stickers on a card
       operationId: get-cards-id-stickers
@@ -5323,7 +5323,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Add a Sticker to a Card
       description: Add a sticker to a card
       operationId: post-cards-id-stickers
@@ -5388,7 +5388,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get a Sticker on a Card
       description: Get a specific sticker on a card
       operationId: get-cards-id-stickers-idsticker
@@ -5410,7 +5410,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Delete a Sticker on a Card
       description: Remove a sticker from the card
       operationId: delete-cards-id-stickers-idsticker
@@ -5419,7 +5419,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Update a Sticker on a Card
       description: Update a sticker on a card
       operationId: put-cards-id-stickers-idsticker
@@ -5477,7 +5477,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     put:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Update Comment Action on a Card
       description: Update an existing comment
       operationId: put-cards-id-actions-idaction-comments
@@ -5493,7 +5493,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Delete a comment on a Card
       description: Delete a comment
       operationId: delete-cards-id-actions-id-comments
@@ -5503,7 +5503,7 @@ paths:
           description: Success
   /cards/{idCard}/customField/{idCustomField}/item:
     put:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Update Custom Field item on Card
       description: Setting, updating, and removing the value for a Custom Field on
         a card. For more details on updating custom fields check out the [Getting
@@ -5557,7 +5557,7 @@ paths:
           description: Success
   /cards/{id}/customFieldItems:
     get:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Get Custom Field Items for a Card
       description: Get the custom field items for a card.
       operationId: get-cards-id-customfielditems
@@ -5580,7 +5580,7 @@ paths:
                   $ref: '#/components/schemas/CustomFieldItems'
   /cards/{id}/actions/comments:
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Add a new comment to a Card
       description: Add a new comment to a card
       operationId: post-cards-id-actions-comments
@@ -5607,7 +5607,7 @@ paths:
                 $ref: '#/components/schemas/Action'
   /cards/{id}/idLabels:
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Add a Label to a Card
       description: Add a label to a card
       operationId: post-cards-id-idlabels
@@ -5630,7 +5630,7 @@ paths:
           description: Success
   /cards/{id}/idMembers:
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Add a Member to a Card
       description: Add a member to a card
       operationId: post-cards-id-idmembers
@@ -5653,7 +5653,7 @@ paths:
           description: Success
   /cards/{id}/labels:
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Create a new Label on a Card
       description: Create a new label for the board and add it to the given card.
       operationId: post-cards-id-labels
@@ -5682,7 +5682,7 @@ paths:
           description: Success
   /cards/{id}/markAssociatedNotificationsRead:
     post:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Mark a Card's Notifications as read
       description: Mark notifications about this card as read
       operationId: post-cards-id-markassociatednotificationsread
@@ -5699,7 +5699,7 @@ paths:
           description: Success
   /cards/{id}/idLabels/{idLabel}:
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Remove a Label from a Card
       description: Remove a label from a card
       operationId: delete-cards-id-idlabels-idlabel
@@ -5722,7 +5722,7 @@ paths:
           description: Success
   /cards/{id}/idMembers/{idMember}:
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Remove a Member from a Card
       description: Remove a member from a card
       operationId: delete-id-idmembers-idmember
@@ -5745,7 +5745,7 @@ paths:
           description: Success
   /cards/{id}/membersVoted/{idMember}:
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Remove a Member's Vote on a Card
       description: Remove a member's vote from a card
       operationId: delete-cards-id-membersvoted-idmember
@@ -5768,7 +5768,7 @@ paths:
           description: Success
   /cards/{idCard}/checklist/{idChecklist}/checkItem/{idCheckItem}:
     put:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Update Checkitem on Checklist on Card
       description: Update an item in a checklist on a card.
       operationId: put-cards-idcard-checklist-idchecklist-checkitem-idcheckitem
@@ -5807,7 +5807,7 @@ paths:
                 $ref: '#/components/schemas/CheckItem'
   /cards/{id}/checklists/{idChecklist}:
     delete:
-      tags: [cards ]
+      tags: [ cards ]
       summary: Delete a Checklist on a Card
       description: Delete a checklist from a card
       operationId: delete-cards-id-checklists-idchecklist
@@ -5830,7 +5830,7 @@ paths:
           description: Success
   /checklists:
     post:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Create a Checklist
       description: ''
       operationId: post-checklists
@@ -5876,7 +5876,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Get a Checklist
       description: ''
       operationId: get-checklists-id
@@ -5946,7 +5946,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Update a Checklist
       description: Update an existing checklist.
       operationId: put-checlists-id
@@ -5970,7 +5970,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Delete a Checklist
       description: Delete a checklist
       operationId: delete-checklists-id
@@ -5996,7 +5996,7 @@ paths:
             - name
             - pos
     get:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Get field on a Checklist
       description: ''
       operationId: get-checklists-id-field
@@ -6004,7 +6004,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Update field on a Checklist
       description: ''
       operationId: put-checklists-id-field
@@ -6024,7 +6024,7 @@ paths:
           description: Success
   /checklists/{id}/board:
     get:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Get the Board the Checklist is on
       description: ''
       operationId: get-checklists-id-board
@@ -6053,7 +6053,7 @@ paths:
           description: Success
   /checklists/{id}/cards:
     get:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Get the Card a Checklist is on
       description: ''
       operationId: get-checklists-id-cards
@@ -6077,7 +6077,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Get Checkitems on a Checklist
       description: ''
       operationId: get-checklists-id-checkitems
@@ -6117,7 +6117,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Create Checkitem on Checklist
       description: ''
       operationId: post-checklists-id-checkitems
@@ -6186,7 +6186,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Get a Checkitem on a Checklist
       description: ''
       operationId: get-checklists-id-checkitems-idcheckitem
@@ -6216,7 +6216,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [checklists ]
+      tags: [ checklists ]
       summary: Delete Checkitem from Checklist
       description: Remove an item from a checklist
       operationId: delete-checklists-id-checkitems-idcheckitem
@@ -6226,7 +6226,7 @@ paths:
           description: Success
   /customFields:
     post:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Create a new Custom Field on a Board
       description: Create a new Custom Field on a board.
       operationId: post-customfields
@@ -6292,7 +6292,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Get a Custom Field
       description: ''
       operationId: get-customfields-id
@@ -6305,7 +6305,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/CustomField'
     put:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Update a Custom Field definition
       description: Update a Custom Field definition.
       operationId: put-customfields-id
@@ -6333,7 +6333,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/CustomField'
     delete:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Delete a Custom Field definition
       description: Delete a Custom Field from a board.
       operationId: delete-customfields-id
@@ -6350,7 +6350,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     post:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Add Option to Custom Field dropdown
       description: Add an option to a dropdown Custom Field
       operationId: get-customfields-id-options
@@ -6359,7 +6359,7 @@ paths:
         '200':
           description: Success
     get:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Get Options of Custom Field drop down
       description: Get the options of a drop down Custom Field
       operationId: post-customfields-id-options
@@ -6382,7 +6382,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Get Option of Custom Field dropdown
       description: Retrieve a specific, existing Option on a given dropdown-type Custom
         Field
@@ -6392,7 +6392,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [customFields ]
+      tags: [ customFields ]
       summary: Delete Option of Custom Field dropdown
       description: Delete an option from a Custom Field dropdown.
       operationId: delete-customfields-options-idcustomfieldoption
@@ -6402,7 +6402,7 @@ paths:
           description: Success
   /emoji:
     get:
-      tags: [emoji ]
+      tags: [ emoji ]
       summary: List available Emoji
       description: List available Emoji
       operationId: emoji
@@ -6432,7 +6432,7 @@ paths:
                 $ref: '#/components/schemas/Emoji'
   /enterprises/{id}:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get an Enterprise
       description: Get an enterprise by its ID.
       operationId: get-enterprises-id
@@ -6566,7 +6566,7 @@ paths:
                 $ref: '#/components/schemas/Enterprise'
   /enterprises/{id}/auditlog:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get auditlog data for an Enterprise
       description: "Returns an array of Actions related to the Enterprise object.\
         \ Used for populating data sent to Google Sheets from an Enterprise's audit\
@@ -6593,7 +6593,7 @@ paths:
                   $ref: '#/components/schemas/EnterpriseAuditLog'
   /enterprises/{id}/admins:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get Enterprise admin Members
       description: Get an enterprise's admin members.
       operationId: get-enterprises-id-admins
@@ -6631,7 +6631,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/signupUrl:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get signupUrl for Enterprise
       description: Get the signup URL for an enterprise.
       operationId: get-enterprises-id-signupurl
@@ -6686,7 +6686,7 @@ paths:
                     type: string
   /enterprises/{id}/members:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get Members of Enterprise
       description: Get the members of an enterprise.
       operationId: get-enterprises-id-members
@@ -6792,7 +6792,7 @@ paths:
                   $ref: '#/components/schemas/Member'
   /enterprises/{id}/members/{idMember}:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get a Member of Enterprise
       description: Get a specific member of an enterprise by ID.
       operationId: get-enterprises-id-members-idmember
@@ -6853,7 +6853,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/transferrable/organization/{idOrganization}:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get whether an organization can be transferred to an enterprise.
       description: Get whether an organization can be transferred to an enterprise.
       operationId: get-enterprises-id-transferrable-organization-idOrganization
@@ -6890,7 +6890,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/transferrable/bulk/{idOrganizations}:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get a bulk list of organizations that can be transferred to an enterprise.
       description: Get a list of organizations that can be transferred to an enterprise
         when given a bulk list of organizations.
@@ -6934,7 +6934,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/${id}/enterpriseJoinRequest/bulk:
     put:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Decline enterpriseJoinRequests from one organization or a bulk list
         of organizations.
       description: Decline enterpriseJoinRequests from one organization or bulk amount
@@ -6972,7 +6972,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/claimableOrganizations:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get ClaimableOrganizations of an Enterprise
       description: Get the Workspaces that are claimable by the enterprise by ID.
         Can optionally query for workspaces based on activeness/ inactiveness.
@@ -7036,7 +7036,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/pendingOrganizations:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Get PendingOrganizations of an Enterprise
       description: Get the Workspaces that are pending for the enterprise by ID.
       operationId: get-enterprises-id-pendingOrganizations
@@ -7083,7 +7083,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/tokens:
     post:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Create an auth Token for an Enterprise.
       description: Create an auth Token for an Enterprise.
       operationId: post-enterprises-id-tokens
@@ -7107,7 +7107,7 @@ paths:
           description: Success
   /enterprises/{id}/organizations:
     put:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Transfer an Organization to an Enterprise.
       description: "Transfer an organization to an enterprise.\n\n NOTE: For enterprises\
         \ that have opted in to user management via AdminHub, this endpoint will result\
@@ -7151,6 +7151,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/members/{idMember}/licensed:
     put:
+      tags: [ enterprises ]
       summary: Update a Member's licensed status
       description: "This endpoint is used to update whether the provided Member should\
         \ use one of the Enterprise's available licenses or not. Revoking a license\
@@ -7198,7 +7199,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /enterprises/{id}/members/{idMember}/deactivated:
     put:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Deactivate a Member of an Enterprise.
       description: "Deactivate a Member of an Enterprise.\n\n NOTE: Deactivation is\
         \ not possible for enterprises that have opted in to user management via AdminHub."
@@ -7233,7 +7234,7 @@ paths:
             type: array
             items:
               $ref: '#/components/schemas/MemberFields'
-            default: [avatarHash, fullName, initials, username]
+            default: [ avatarHash, fullName, initials, username ]
         - name: organization_fields
           in: query
           description: Any valid value that the [nested organization resource](/cloud/trello/guides/rest-api/nested-resources/)
@@ -7258,7 +7259,7 @@ paths:
           description: Success
   /enterprises/{id}/admins/{idMember}:
     put:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Update Member to be admin of Enterprise
       description: "Make Member an admin of Enterprise.\n\n NOTE: This endpoint is\
         \ not available to enterprises that have opted in to user management via AdminHub."
@@ -7281,7 +7282,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Remove a Member as admin from Enterprise.
       description: "Remove a member as admin from an enterprise.\n\n NOTE: This endpoint\
         \ is not available to enterprises that have opted in to user management via\
@@ -7306,7 +7307,7 @@ paths:
           description: Success
   /enterprises/{id}/organizations/{idOrg}:
     delete:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Delete an Organization from an Enterprise.
       description: Remove an organization from an enterprise.
       operationId: delete-enterprises-id-organizations-idorg
@@ -7329,7 +7330,7 @@ paths:
           description: Success
   /enterprises/{id}/organizations/bulk/{idOrganizations}:
     get:
-      tags: [enterprises ]
+      tags: [ enterprises ]
       summary: Bulk accept a set of organizations to an Enterprise.
       description: "Accept an array of organizations to an enterprise.\n\n NOTE: For\
         \ enterprises that have opted in to user management via AdminHub, this endpoint\
@@ -7376,7 +7377,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [labels ]
+      tags: [ labels ]
       summary: Get a Label
       description: Get information about a single Label.
       operationId: get-labels-id
@@ -7393,7 +7394,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [labels ]
+      tags: [ labels ]
       summary: Update a Label
       description: Update a label by ID.
       operationId: put-labels-id
@@ -7416,7 +7417,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [labels ]
+      tags: [ labels ]
       summary: Delete a Label
       description: Delete a label by ID.
       operationId: delete-labels-id
@@ -7426,7 +7427,7 @@ paths:
           description: Success
   /labels/{id}/{field}:
     put:
-      tags: [labels ]
+      tags: [ labels ]
       summary: Update a field on a label
       description: Update a field on a label.
       operationId: put-labels-id-field
@@ -7458,7 +7459,7 @@ paths:
           description: Success
   /labels:
     post:
-      tags: [labels ]
+      tags: [ labels ]
       summary: Create a Label
       description: Create a new Label on a Board.
       operationId: post-labels
@@ -7494,7 +7495,7 @@ paths:
         schema:
           type: string
     get:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Get a List
       description: Get information about a List
       operationId: get-lists-id
@@ -7513,7 +7514,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Update a List
       description: Update the properties of a List
       operationId: put-lists-id
@@ -7563,7 +7564,7 @@ paths:
           description: Success
   /lists:
     post:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Create a new List
       description: Create a new List on a Board
       operationId: post-lists
@@ -7605,7 +7606,7 @@ paths:
           description: Success
   /lists/{id}/archiveAllCards:
     post:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Archive all Cards in List
       description: Archive all cards in a list
       operationId: post-lists-id-archiveallcards
@@ -7622,7 +7623,7 @@ paths:
           description: Success
   /lists/{id}/moveAllCards:
     post:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Move all Cards in List
       description: Move all Cards in a List
       operationId: post-lists-id-moveallcards
@@ -7651,7 +7652,7 @@ paths:
           description: Success
   /lists/{id}/closed:
     put:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Archive or unarchive a list
       description: Archive or unarchive a list
       operationId: put-lists-id-closed
@@ -7674,7 +7675,7 @@ paths:
           description: Success
   /lists/{id}/idBoard:
     put:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Move List to Board
       description: Move a List to a different Board
       operationId: put-id-idboard
@@ -7697,7 +7698,7 @@ paths:
           description: Success
   /lists/{id}/{field}:
     put:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Update a field on a List
       description: Rename a list
       operationId: put-lists-id-field
@@ -7741,7 +7742,7 @@ paths:
           description: Success
   /lists/{id}/actions:
     get:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Get Actions for a List
       description: Get the Actions on a List
       operationId: get-lists-id-actions
@@ -7764,7 +7765,7 @@ paths:
           description: Success
   /lists/{id}/board:
     get:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Get the Board a List is on
       description: Get the board a list is on
       operationId: get-lists-id-board
@@ -7793,7 +7794,7 @@ paths:
           description: Success
   /lists/{id}/cards:
     get:
-      tags: [lists ]
+      tags: [ lists ]
       summary: Get Cards in a List
       description: List the cards in a list
       operationId: get-lists-id-cards
@@ -7816,7 +7817,7 @@ paths:
                   $ref: '#/components/schemas/Card'
   /members/{id}:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member
       description: Get a member
       operationId: get-members=id
@@ -8044,7 +8045,7 @@ paths:
                 oneOf:
                   - $ref: '#/components/schemas/Member'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update a Member
       description: Update a Member
       operationId: put-members-id
@@ -8122,7 +8123,7 @@ paths:
                   - $ref: '#/components/schemas/Member'
   /members/{id}/{field}:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a field on a Member
       description: Get a particular property of a member
       operationId: get-members-id-field
@@ -8150,7 +8151,7 @@ paths:
                   - $ref: '#/components/schemas/Member'
   /members/{id}/actions:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's Actions
       description: List the actions for a member
       operationId: get-members-id-actions
@@ -8180,7 +8181,7 @@ paths:
                     - $ref: '#/components/schemas/Member'
   /members/{id}/boardBackgrounds:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Member's custom Board backgrounds
       description: Get a member's custom board backgrounds
       operationId: get-members-id-boardbackgrounds
@@ -8216,7 +8217,7 @@ paths:
                   oneOf:
                     - $ref: '#/components/schemas/BoardBackground'
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Upload new boardBackground for Member
       description: Upload a new boardBackground
       operationId: post-members-id-boardbackgrounds-1
@@ -8260,7 +8261,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a boardBackground of a Member
       description: Get a member's board background
       operationId: get-members-id-boardbackgrounds-idbackground
@@ -8293,7 +8294,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BoardBackground'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update a Member's custom Board background
       description: Update a board background
       operationId: put-members-id-boardbackgrounds-idbackground
@@ -8323,7 +8324,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BoardBackground'
     delete:
-      tags: [members ]
+      tags: [ members ]
       summary: Delete a Member's custom Board background
       description: Delete a board background
       operationId: delete-members-id-boardbackgrounds-idbackground
@@ -8333,7 +8334,7 @@ paths:
           description: Success
   /members/{id}/boardStars:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's boardStars
       description: List a member's board stars
       operationId: get-members-id-boardstars
@@ -8349,7 +8350,7 @@ paths:
         '200':
           description: Success
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Create Star for Board
       description: Star a new board on behalf of a Member
       operationId: post-members-id-boardstars
@@ -8400,7 +8401,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a boardStar of Member
       description: Get a specific boardStar
       operationId: get-members-id-boardstars-idstar
@@ -8413,7 +8414,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BoardStars'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update the position of a boardStar of Member
       description: Update the position of a starred board
       operationId: put-members-id-boardstars-idstar
@@ -8430,7 +8431,7 @@ paths:
         '200':
           description: Success
     delete:
-      tags: [members ]
+      tags: [ members ]
       summary: Delete Star for Board
       description: Unstar a board
       operationId: delete-members-id-boardstars-idstar
@@ -8440,7 +8441,7 @@ paths:
           description: Success
   /members/{id}/boards:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Boards that Member belongs to
       description: Lists the boards that the user is a member of.
       operationId: get-members-id-boards
@@ -8530,7 +8531,7 @@ paths:
                   $ref: '#/components/schemas/Board'
   /members/{id}/boardsInvited:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Boards the Member has been invited to
       description: Get the boards the member has been invited to
       operationId: get-members-id-boardsinvited
@@ -8565,7 +8566,7 @@ paths:
                   $ref: '#/components/schemas/Board'
   /members/{id}/cards:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Cards the Member is on
       description: Gets the cards a member is on
       operationId: get-members-id-cards
@@ -8608,7 +8609,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's custom Board Backgrounds
       description: Get a member's custom board backgrounds
       operationId: get-members-id-customboardbackgrounds
@@ -8623,7 +8624,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/BoardBackground'
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Create a new custom Board Background
       description: Upload a new custom board background
       operationId: membersidcustomboardbackgrounds-1
@@ -8660,7 +8661,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get custom Board Background of Member
       description: Get a specific custom board background
       operationId: get-members-id-customboardbackgrounds-idbackground
@@ -8673,7 +8674,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BoardBackground'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update custom Board Background of Member
       description: Update a specific custom board background
       operationId: put-members-id-customboardbackgrounds-idbackground
@@ -8703,7 +8704,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BoardBackground'
     delete:
-      tags: [members ]
+      tags: [ members ]
       summary: Delete custom Board Background of Member
       description: Delete a specific custom board background
       operationId: delete-members-id-customboardbackgrounds-idbackground
@@ -8720,7 +8721,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's customEmojis
       description: Get a Member's uploaded custom Emojis
       operationId: get-members-id-customemoji
@@ -8735,7 +8736,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/CustomEmoji'
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Create custom Emoji for Member
       description: Create a new custom Emoji
       operationId: post-members-id-customemoji
@@ -8765,7 +8766,7 @@ paths:
                 $ref: '#/components/schemas/CustomEmoji'
   /members/{id}/customEmoji/{idEmoji}:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's custom Emoji
       description: Get a Member's custom Emoji
       operationId: membersidcustomemojiidemoji
@@ -8815,7 +8816,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Member's custom Stickers
       description: Get a Member's uploaded stickers
       operationId: get-members-id-customstickers
@@ -8830,7 +8831,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/CustomSticker'
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Create custom Sticker for Member
       description: Upload a new custom sticker
       operationId: post-members-id-customstickers
@@ -8865,7 +8866,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's custom Sticker
       description: Get a Member's custom Sticker
       operationId: get-members-id-customstickers-idsticker
@@ -8896,7 +8897,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/CustomSticker'
     delete:
-      tags: [members ]
+      tags: [ members ]
       summary: Delete a Member's custom Sticker
       description: Delete a Member's custom Sticker
       operationId: delete-members-id-customstickers-idsticker
@@ -8906,7 +8907,7 @@ paths:
           description: Success
   /members/{id}/notifications:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Member's Notifications
       description: Get a member's notifications
       operationId: get-members-id-notifications
@@ -9016,7 +9017,7 @@ paths:
                   $ref: '#/components/schemas/Notification'
   /members/{id}/organizations:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Member's Organizations
       description: Get a member's Workspaces
       operationId: get-members-id-organizations
@@ -9074,7 +9075,7 @@ paths:
                   $ref: '#/components/schemas/Organization'
   /members/{id}/organizationsInvited:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Organizations a Member has been invited to
       description: Get a member's Workspaces they have been invited to
       operationId: get-members-id-organizationsinvited
@@ -9116,7 +9117,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Member's saved searched
       description: List the saved searches of a Member
       operationId: get-members-id-savedsearches
@@ -9131,7 +9132,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/SavedSearch'
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Create saved Search for Member
       description: Create a saved search
       operationId: post-members-id-savedsearches
@@ -9178,7 +9179,7 @@ paths:
         schema:
           type: string
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a saved search
       description: Get a saved search
       operationId: get-members-id-savedsearches-idsearch
@@ -9191,7 +9192,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SavedSearch'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update a saved search
       description: Update a saved search
       operationId: put-members-id-savedsearches-idsearch
@@ -9224,7 +9225,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SavedSearch'
     delete:
-      tags: [members ]
+      tags: [ members ]
       summary: Delete a saved search
       description: Delete a saved search
       operationId: delete-members-id-savedsearches-idsearch
@@ -9234,7 +9235,7 @@ paths:
           description: Success
   /members/{id}/tokens:
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get Member's Tokens
       description: List a members app tokens
       operationId: get-members-id-tokens
@@ -9264,7 +9265,7 @@ paths:
                   $ref: '#/components/schemas/Token'
   /members/{id}/avatar:
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Create Avatar for Member
       description: Create a new avatar for a member
       operationId: membersidavatar
@@ -9288,7 +9289,7 @@ paths:
           description: Success
   /members/{id}/oneTimeMessagesDismissed:
     post:
-      tags: [members ]
+      tags: [ members ]
       summary: Dismiss a message for Member
       description: Dismiss a message
       operationId: post-members-id-onetimemessagesdismissed
@@ -9320,7 +9321,7 @@ paths:
             - $ref: '#/components/schemas/TrelloID'
             - type: string
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get a Member's notification channel settings
       description: Get a member's notification channel settings
       operationId: get-members-id-notificationChannelSettings
@@ -9335,7 +9336,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/NotificationChannelSettings'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update blocked notification keys of Member on a channel
       description: Update blocked notification keys of Member on a specific channel
       operationId: put-members-id-notificationChannelSettings-channel-blockedKeys
@@ -9383,7 +9384,7 @@ paths:
         schema:
           $ref: '#/components/schemas/Channel'
     get:
-      tags: [members ]
+      tags: [ members ]
       summary: Get blocked notification keys of Member on this channel
       description: Get blocked notification keys of Member on a specific channel
       operationId: get-members-id-notificationChannelSettings-channel
@@ -9396,7 +9397,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/NotificationChannelSettings'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update blocked notification keys of Member on a channel
       description: Update blocked notification keys of Member on a specific channel
       operationId: put-members-id-notificationChannelSettings-channel-blockedKeys
@@ -9447,7 +9448,7 @@ paths:
         schema:
           $ref: '#/components/schemas/BlockedKey'
     put:
-      tags: [members ]
+      tags: [ members ]
       summary: Update blocked notification keys of Member on a channel
       description: Update blocked notification keys of Member on a specific channel
       operationId: put-members-id-notificationChannelSettings-channel-blockedKeys
@@ -9461,7 +9462,7 @@ paths:
                 $ref: '#/components/schemas/NotificationChannelSettings'
   /notifications/{id}:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get a Notification
       description: ''
       operationId: get-notifications-id
@@ -9618,7 +9619,7 @@ paths:
                 oneOf:
                   - $ref: '#/components/schemas/Notification'
     put:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Update a Notification's read status
       description: Update the read status of a notification
       operationId: put-notifications-id
@@ -9646,7 +9647,7 @@ paths:
                   - $ref: '#/components/schemas/Notification'
   /notifications/{id}/{field}:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get a field of a Notification
       description: Get a specific property of a notification
       operationId: get-notifications-id-field
@@ -9674,7 +9675,7 @@ paths:
                   - $ref: '#/components/schemas/Notification'
   /notifications/all/read:
     post:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Mark all Notifications as read
       description: Mark all notifications as read
       operationId: post-notifications-all-read
@@ -9710,7 +9711,7 @@ paths:
                   - $ref: '#/components/schemas/Notification'
   /notifications/{id}/unread:
     put:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Update Notification's read status
       description: Update Notification's read status
       operationId: put-notifications-id-unread
@@ -9737,7 +9738,7 @@ paths:
                   - $ref: '#/components/schemas/Notification'
   /notifications/{id}/board:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get the Board a Notification is on
       description: Get the board a notification is associated with
       operationId: get-notifications-id-board
@@ -9773,7 +9774,7 @@ paths:
                   - $ref: '#/components/schemas/Board'
   /notifications/{id}/card:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get the Card a Notification is on
       description: Get the card a notification is associated with
       operationId: get-notifications-id-card
@@ -9809,7 +9810,7 @@ paths:
                   - $ref: '#/components/schemas/Card'
   /notifications/{id}/list:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get the List a Notification is on
       description: Get the list a notification is associated with
       operationId: get-notifications-id-list
@@ -9843,7 +9844,7 @@ paths:
                   - $ref: '#/components/schemas/TrelloList'
   /notifications/{id}/member:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get the Member a Notification is about (not the creator)
       description: Get the member (not the creator) a notification is about
       operationId: notificationsidmember
@@ -9877,7 +9878,7 @@ paths:
                   - $ref: '#/components/schemas/Member'
   /notifications/{id}/memberCreator:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get the Member who created the Notification
       description: Get the member who created the notification
       operationId: get-notifications-id-membercreator
@@ -9913,7 +9914,7 @@ paths:
                   - $ref: '#/components/schemas/Member'
   /notifications/{id}/organization:
     get:
-      tags: [notifications ]
+      tags: [ notifications ]
       summary: Get a Notification's associated Organization
       description: Get the organization a notification is associated with
       operationId: get-notifications-id-organization
@@ -9949,7 +9950,7 @@ paths:
                   - $ref: '#/components/schemas/Organization'
   /organizations:
     post:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Create a new Organization
       description: Create a new Workspace
       operationId: post-organizations
@@ -10001,7 +10002,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get an Organization
       description: ''
       operationId: get-organizations-id
@@ -10014,7 +10015,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Organization'
     put:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Update an Organization
       description: Update an organization
       operationId: put-organizations-id
@@ -10107,7 +10108,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Organization'
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Delete an Organization
       description: Delete an Organization
       operationId: delete-organizations-id
@@ -10117,7 +10118,7 @@ paths:
           description: Success
   /organizations/{id}/{field}:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get field on Organization
       description: ''
       operationId: get-organizations-id-field
@@ -10144,7 +10145,7 @@ paths:
                 $ref: '#/components/schemas/Organization'
   /organizations/{id}/actions:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get Actions for Organization
       description: List the actions on a Workspace
       operationId: get-organizations-id-actions
@@ -10167,7 +10168,7 @@ paths:
                   $ref: '#/components/schemas/Action'
   /organizations/{id}/boards:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get Boards in an Organization
       description: List the boards in a Workspace
       operationId: get-organizations-id-boards
@@ -10229,7 +10230,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     post:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Create Export for Organizations
       description: Kick off CSV export for an organization
       operationId: post-organizations-id-exports
@@ -10250,7 +10251,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Export'
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Retrieve Organization's Exports
       description: Retrieve the exports that exist for the given organization
       operationId: get-organizations-id-exports
@@ -10266,7 +10267,7 @@ paths:
                   $ref: '#/components/schemas/Export'
   /organizations/{id}/members:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get the Members of an Organization
       description: List the members in a Workspace
       operationId: get-organizations-id-members
@@ -10289,7 +10290,7 @@ paths:
                   oneOf:
                     - $ref: '#/components/schemas/Member'
     put:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Update an Organization's Members
       description: ''
       operationId: put-organizations-id-members
@@ -10331,7 +10332,7 @@ paths:
           description: Success
   /organizations/{id}/memberships:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get Memberships of an Organization
       description: List the memberships of a Workspace
       operationId: get-organizations-id-memberships
@@ -10383,7 +10384,7 @@ paths:
                     - $ref: '#/components/schemas/Memberships'
   /organizations/{id}/memberships/{idMembership}:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get a Membership of an Organization
       description: Get a single Membership for an Organization
       operationId: get-organizations-id-memberships-idmembership
@@ -10418,7 +10419,7 @@ paths:
                   - $ref: '#/components/schemas/Memberships'
   /organizations/{id}/pluginData:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get the pluginData Scoped to Organization
       description: Get organization scoped pluginData on this Workspace
       operationId: get-organizations-id-plugindata
@@ -10451,7 +10452,7 @@ paths:
             - type: string
             - $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get Tags of an Organization
       description: List the organization's collections
       operationId: get-organizations-id-tags
@@ -10467,7 +10468,7 @@ paths:
                   oneOf:
                     - $ref: '#/components/schemas/Tag'
     post:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Create a Tag in Organization
       description: Create a Tag in an Organization
       operationId: post-organizations-id-tags
@@ -10482,7 +10483,7 @@ paths:
                   - $ref: '#/components/schemas/Tag'
   /organizations/{id}/members/{idMember}:
     put:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Update a Member of an Organization
       description: Add a member to a Workspace or update their member type.
       operationId: put-organizations-id-members-idmember
@@ -10520,7 +10521,7 @@ paths:
                 oneOf:
                   - $ref: '#/components/schemas/Member'
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Remove a Member from an Organization
       description: Remove a member from a Workspace
       operationId: delete-organizations-id-members
@@ -10546,7 +10547,7 @@ paths:
           description: Success
   /organizations/{id}/members/{idMember}/deactivated:
     put:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Deactivate or reactivate a member of an Organization
       description: Deactivate or reactivate a member of a Workspace
       operationId: put-organizations-id-members-idmember-deactivated
@@ -10577,7 +10578,7 @@ paths:
           description: Success
   /organizations/{id}/logo:
     post:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Update logo for an Organization
       description: Set the logo image for a Workspace
       operationId: post-organizations-id-logo
@@ -10605,7 +10606,7 @@ paths:
                 oneOf:
                   - $ref: '#/components/schemas/Organization'
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Delete Logo for Organization
       description: Delete a the logo from a Workspace
       operationId: delete-organizations-id-logo
@@ -10622,7 +10623,7 @@ paths:
           description: Success
   /organizations/{id}/members/{idMember}/all:
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Remove a Member from an Organization and all Organization Boards
       description: Remove a member from a Workspace and from all Workspace boards
       operationId: organizations-id-members-idmember-all
@@ -10645,7 +10646,7 @@ paths:
           description: Success
   /organizations/{id}/prefs/associatedDomain:
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Remove the associated Google Apps domain from a Workspace
       description: Remove the associated Google Apps domain from a Workspace
       operationId: delete-organizations-id-prefs-associateddomain
@@ -10662,7 +10663,7 @@ paths:
           description: Success
   /organizations/{id}/prefs/orgInviteRestrict:
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Delete the email domain restriction on who can be invited to the Workspace
       description: Remove the email domain restriction on who can be invited to the
         Workspace
@@ -10680,7 +10681,7 @@ paths:
           description: Success
   /organizations/{id}/tags/{idTag}:
     delete:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Delete an Organization's Tag
       description: Delete an organization's tag
       operationId: delete-organizations-id-tags-idtag
@@ -10703,7 +10704,7 @@ paths:
           description: Success
   /organizations/{id}/newBillableGuests/{idBoard}:
     get:
-      tags: [organizations ]
+      tags: [ organizations ]
       summary: Get Organizations new billable guests
       description: Used to check whether the given board has new billable guests on
         it.
@@ -10727,7 +10728,7 @@ paths:
           description: Success
   /plugins/{id}/:
     get:
-      tags: [plugins ]
+      tags: [ plugins ]
       summary: Get a Plugin
       description: Get plugins
       operationId: get-plugins-id
@@ -10747,7 +10748,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Plugin'
     put:
-      tags: [plugins ]
+      tags: [ plugins ]
       summary: Update a Plugin
       description: Update a Plugin
       operationId: put-plugins-id
@@ -10768,7 +10769,7 @@ paths:
                 $ref: '#/components/schemas/Plugin'
   /plugins/{idPlugin}/listing:
     post:
-      tags: [plugins ]
+      tags: [ plugins ]
       summary: Create a Listing for Plugin
       description: Create a new listing for a given locale for your Power-Up
       operationId: post-plugins-idplugin-listing
@@ -10807,7 +10808,7 @@ paths:
                 $ref: '#/components/schemas/PluginListing'
   /plugins/{id}/compliance/memberPrivacy:
     get:
-      tags: [plugins ]
+      tags: [ plugins ]
       summary: Get Plugin's Member privacy compliance
       description: ''
       operationId: get-plugins-id-compliance-memberprivacy
@@ -10824,7 +10825,7 @@ paths:
           description: Success
   /plugins/{idPlugin}/listings/{idListing}:
     put:
-      tags: [plugins ]
+      tags: [ plugins ]
       summary: Updating Plugin's Listing
       description: Update an existing listing for your Power-Up
       operationId: put-plugins-idplugin-listings-idlisting
@@ -10870,7 +10871,7 @@ paths:
                 $ref: '#/components/schemas/PluginListing'
   /search:
     get:
-      tags: [search ]
+      tags: [ search ]
       summary: Search Trello
       description: Find what you're looking for in Trello
       operationId: get-search
@@ -11075,7 +11076,7 @@ paths:
                     - $ref: '#/components/schemas/Organization'
   /search/members/:
     get:
-      tags: [search ]
+      tags: [ search ]
       summary: Search for Members
       description: Search for Trello members.
       operationId: get-search-members
@@ -11128,7 +11129,7 @@ paths:
                   $ref: '#/components/schemas/MemberFields'
   /tokens/{token}:
     get:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Get a Token
       description: Retrieve information about a token.
       operationId: get-tokens-token
@@ -11169,7 +11170,7 @@ paths:
                 $ref: '#/components/schemas/Token'
   /tokens/{token}/member:
     get:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Get Token's Member
       description: Retrieve information about a token's owner by token.
       operationId: get-tokens-token-member
@@ -11210,7 +11211,7 @@ paths:
         schema:
           type: string
     get:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Get Webhooks for Token
       description: Retrieve all webhooks created with a Token.
       operationId: get-tokens-token-webhooks
@@ -11225,7 +11226,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Webhook'
     post:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Create Webhooks for Token
       description: Create a new webhook for a Token.
       operationId: post-tokens-token-webhooks
@@ -11273,7 +11274,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Get a Webhook belonging to a Token
       description: Retrieve a webhook created with a Token.
       operationId: get-tokens-token-webhooks-idwebhook
@@ -11286,7 +11287,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Webhook'
     delete:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Delete a Webhook created by Token
       description: Delete a webhook created with given token.
       operationId: delete-tokens-token-webhooks-idwebhook
@@ -11295,7 +11296,7 @@ paths:
         '200':
           description: Success
     put:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Update a Webhook created by Token
       description: Update a Webhook created by Token
       operationId: tokenstokenwebhooks-1
@@ -11326,7 +11327,7 @@ paths:
           description: Success
   /tokens/{token}/:
     delete:
-      tags: [tokens ]
+      tags: [ tokens ]
       summary: Delete a Token
       description: Delete a token.
       operationId: delete-token
@@ -11343,7 +11344,7 @@ paths:
           description: Success
   /webhooks/:
     post:
-      tags: [webhooks ]
+      tags: [ webhooks ]
       summary: Create a Webhook
       description: Create a new webhook.
       operationId: post-webhooks
@@ -11392,7 +11393,7 @@ paths:
         schema:
           $ref: '#/components/schemas/TrelloID'
     get:
-      tags: [webhooks ]
+      tags: [ webhooks ]
       summary: Get a Webhook
       description: Get a webhook by ID. You must use the token query parameter and
         pass in the token the webhook was created under, or else you will encounter
@@ -11407,7 +11408,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Webhook'
     put:
-      tags: [webhooks ]
+      tags: [ webhooks ]
       summary: Update a Webhook
       description: Update a webhook by ID.
       operationId: put-webhooks-id
@@ -11448,7 +11449,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Webhook'
     delete:
-      tags: [webhooks ]
+      tags: [ webhooks ]
       summary: Delete a Webhook
       description: Delete a webhook by ID.
       operationId: delete-webhooks-id
@@ -11458,7 +11459,7 @@ paths:
           description: Success
   /webhooks/{id}/{field}:
     get:
-      tags: [webhooks ]
+      tags: [ webhooks ]
       summary: Get a field on a Webhook
       description: Get a field on a Webhook
       operationId: webhooksidfield

@@ -12,7 +12,6 @@ import { BoardsService } from './services/BoardsService';
 import { CardsService } from './services/CardsService';
 import { ChecklistsService } from './services/ChecklistsService';
 import { CustomFieldsService } from './services/CustomFieldsService';
-import { DefaultService } from './services/DefaultService';
 import { EmojiService } from './services/EmojiService';
 import { EnterprisesService } from './services/EnterprisesService';
 import { LabelsService } from './services/LabelsService';
@@ -36,7 +35,6 @@ export class TsTrello {
     public readonly cards: CardsService;
     public readonly checklists: ChecklistsService;
     public readonly customFields: CustomFieldsService;
-    public readonly default: DefaultService;
     public readonly emoji: EmojiService;
     public readonly enterprises: EnterprisesService;
     public readonly labels: LabelsService;
@@ -71,7 +69,6 @@ export class TsTrello {
         this.cards = new CardsService(this.request);
         this.checklists = new ChecklistsService(this.request);
         this.customFields = new CustomFieldsService(this.request);
-        this.default = new DefaultService(this.request);
         this.emoji = new EmojiService(this.request);
         this.enterprises = new EnterprisesService(this.request);
         this.labels = new LabelsService(this.request);
