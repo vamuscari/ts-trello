@@ -2581,7 +2581,7 @@ paths:
           explode: false
           schema:
             $ref: '#/components/schemas/MemberFields'
-            default: fullname,username
+            default: id
       deprecated: false
       responses:
         '200':
@@ -3583,7 +3583,7 @@ paths:
           style: form
           schema:
             type: string
-            default: fullName, username
+            default: all
             enum:
               - all
               - avatarHash
@@ -5083,10 +5083,11 @@ paths:
           in: query
           description: '`all` or a comma-separated list of `name,nameData,pos,state,type,due,dueReminder,idMember`'
           required: false
+          explode: false
           schema:
             oneOf:
               - type: string
-                enum: [ all ]
+                enum: [all]
               - type: array
                 items:
                   type: string
@@ -5098,7 +5099,7 @@ paths:
                     - due
                     - dueReminder
                     - idMember
-            default: name, nameData, pos, state, due, dueReminder, idMember
+            default: [name, nameData, pos, state, due, dueReminder, idMember]
       deprecated: false
       responses:
         '200':
@@ -6100,7 +6101,7 @@ paths:
           style: form
           schema:
             type: string
-            default: name, nameData, pos, state, due, dueReminder, idMember
+            default: all
             enum:
               - all
               - name
@@ -6199,7 +6200,7 @@ paths:
           explode: false
           schema:
             type: string
-            default: name, nameData, pos, state, due, dueReminder, idMember
+            default: all
             enum:
               - all
               - name
@@ -7229,8 +7230,10 @@ paths:
           explode: false
           style: form
           schema:
-            $ref: '#/components/schemas/MemberFields'
-            default: avatarHash, fullName, initials, username
+            type: array
+            items:
+              $ref: '#/components/schemas/MemberFields'
+            default: [avatarHash, fullName, initials, username]
         - name: organization_fields
           in: query
           description: Any valid value that the [nested organization resource](/cloud/trello/guides/rest-api/nested-resources/)
@@ -7240,7 +7243,7 @@ paths:
           style: form
           schema:
             $ref: '#/components/schemas/OrganizationFields'
-            default: displayName
+            default: name
         - name: board_fields
           in: query
           description: Any valid value that the [nested board resource](/cloud/trello/guides/rest-api/nested-resources/)

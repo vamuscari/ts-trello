@@ -41,7 +41,7 @@ export class BoardsService {
         activity: boolean = false,
         orgMemberType: boolean = false,
         member: boolean = false,
-        memberFields: MemberFields = 'fullname,username',
+        memberFields: MemberFields = 'id',
     ): CancelablePromise<Memberships> {
         return this.httpRequest.request({
             method: 'GET',
@@ -737,7 +737,7 @@ export class BoardsService {
         id: TrelloID,
         idMembership: TrelloID,
         type: 'admin' | 'normal' | 'observer',
-        memberFields: 'all' | 'avatarHash' | 'bio' | 'bioData' | 'confirmed' | 'fullName' | 'idPremOrgsAdmin' | 'initials' | 'memberType' | 'products' | 'status' | 'url' | 'username' = 'fullName, username',
+        memberFields: 'all' | 'avatarHash' | 'bio' | 'bioData' | 'confirmed' | 'fullName' | 'idPremOrgsAdmin' | 'initials' | 'memberType' | 'products' | 'status' | 'url' | 'username' = 'all',
     ): CancelablePromise<any> {
         return this.httpRequest.request({
             method: 'PUT',

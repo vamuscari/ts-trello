@@ -482,8 +482,8 @@ export class EnterprisesService {
         id: TrelloID,
         idMember: TrelloID,
         value: boolean,
-        fields: MemberFields = 'avatarHash, fullName, initials, username',
-        organizationFields: OrganizationFields = 'displayName',
+        fields?: Array<MemberFields>,
+        organizationFields: OrganizationFields = 'name',
         boardFields: BoardFields = 'name',
     ): CancelablePromise<any> {
         return this.httpRequest.request({

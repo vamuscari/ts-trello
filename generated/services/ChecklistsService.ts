@@ -217,7 +217,7 @@ export class ChecklistsService {
     public getChecklistsIdCheckitems(
         id: TrelloID,
         filter: 'all' | 'none' = 'all',
-        fields: 'all' | 'name' | 'nameData' | 'pos' | 'state' | 'type' | 'due' | 'dueReminder' | 'idMember' = 'name, nameData, pos, state, due, dueReminder, idMember',
+        fields: 'all' | 'name' | 'nameData' | 'pos' | 'state' | 'type' | 'due' | 'dueReminder' | 'idMember' = 'all',
     ): CancelablePromise<any> {
         return this.httpRequest.request({
             method: 'GET',
@@ -281,7 +281,7 @@ export class ChecklistsService {
     public getChecklistsIdCheckitemsIdcheckitem(
         id: TrelloID,
         idCheckItem: TrelloID,
-        fields: 'all' | 'name' | 'nameData' | 'pos' | 'state' | 'type' | 'due' | 'dueReminder' | 'idMember' = 'name, nameData, pos, state, due, dueReminder, idMember',
+        fields: 'all' | 'name' | 'nameData' | 'pos' | 'state' | 'type' | 'due' | 'dueReminder' | 'idMember' = 'all',
     ): CancelablePromise<any> {
         return this.httpRequest.request({
             method: 'GET',
