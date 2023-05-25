@@ -1,0 +1,35 @@
+{
+  "name": "ts-trello",
+  "version": "0.0.0",
+  "description": "A Typescript API wrapper for Trello",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "gen&build" : "npm run generate && npm run build",
+    "build": "rm -rf dist && tsc",
+    "test:ts": "tsc --noEmit",
+    "schema": "npx openapi-typescript scraper/trello-schema.json -o ./src/api-schema.d.ts",
+    "generate": "rm -rf generated && openapi --input ./scraper/trello-schema.yaml --output ./generated --name TsTrello --client axios --useUnionTypes"
+  },
+  "keywords": [
+    "atlassian",
+    "trello",
+    "rest",
+    "api"
+  ],
+  "author": "Van Muscari",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/types": "^29.5.0",
+    "axios": "^1.4.0",
+    "form-data": "^4.0.0",
+    "jest": "^29.5.0",
+    "openapi-typescript": "^6.2.4",
+    "openapi-typescript-codegen": "^0.24.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "openapi-fetch": "^0.2.0"
+  }
+}
