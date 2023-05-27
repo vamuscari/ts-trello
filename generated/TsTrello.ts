@@ -2,8 +2,8 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { BaseHttpRequest } from './core/BaseHttpRequest';
-import type { OpenAPIConfig } from './core/OpenAPI';
-import { AxiosHttpRequest } from './core/AxiosHttpRequest';
+import type { Config } from './core/OpenAPI';
+import { FetchHttpRequest } from './core/FetchHttpRequest';
 
 import { ActionsService } from './services/ActionsService';
 import { ApplicationsService } from './services/ApplicationsService';
@@ -24,7 +24,7 @@ import { SearchService } from './services/SearchService';
 import { TokensService } from './services/TokensService';
 import { WebhooksService } from './services/WebhooksService';
 
-type HttpRequestConstructor = new (config: OpenAPIConfig) => BaseHttpRequest;
+type HttpRequestConstructor = new (config: Config) => BaseHttpRequest;
 
 export class TsTrello {
 
@@ -49,15 +49,11 @@ export class TsTrello {
 
     public readonly request: BaseHttpRequest;
 
-    constructor(config?: Partial<OpenAPIConfig>, HttpRequest: HttpRequestConstructor = AxiosHttpRequest) {
+    constructor(config?: Partial<Config>, HttpRequest: HttpRequestConstructor = FetchHttpRequest) {
         this.request = new HttpRequest({
             BASE: config?.BASE ?? 'https://api.trello.com/1',
-            VERSION: config?.VERSION ?? '0.0.1',
-            WITH_CREDENTIALS: config?.WITH_CREDENTIALS ?? false,
-            CREDENTIALS: config?.CREDENTIALS ?? 'include',
+            KEY: config?.KEY,
             TOKEN: config?.TOKEN,
-            USERNAME: config?.USERNAME,
-            PASSWORD: config?.PASSWORD,
             HEADERS: config?.HEADERS,
             ENCODE_PATH: config?.ENCODE_PATH,
         });

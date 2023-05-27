@@ -6,6 +6,7 @@
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
+    "lib": ["dom"],
     "allowSyntheticDefaultImports": true
   },
   "include": ["generated"],

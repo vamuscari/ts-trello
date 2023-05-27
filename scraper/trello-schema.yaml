@@ -2008,7 +2008,7 @@ components:
             $ref: '#/components/schemas/Error'
 security:
   - APIKey: [ ]
-    APIToken: [ ]
+  - APIToken: [ ]
 paths:
   /actions/{id}:
     parameters:

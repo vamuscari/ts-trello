@@ -2,30 +2,24 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { ApiRequestOptions } from './ApiRequestOptions';
+import {APIKey} from "../models/APIKey";
+import {APIToken} from "../models/APIToken";
 
 type Resolver<T> = (options: ApiRequestOptions) => Promise<T>;
 type Headers = Record<string, string>;
 
-export type OpenAPIConfig = {
+export type Config = {
     BASE: string;
-    VERSION: string;
-    WITH_CREDENTIALS: boolean;
-    CREDENTIALS: 'include' | 'omit' | 'same-origin';
-    TOKEN?: string | Resolver<string>;
-    USERNAME?: string | Resolver<string>;
-    PASSWORD?: string | Resolver<string>;
     HEADERS?: Headers | Resolver<Headers>;
+    KEY?: APIKey
+    TOKEN?: APIToken
     ENCODE_PATH?: (path: string) => string;
 };
 
-export const OpenAPI: OpenAPIConfig = {
+export const OpenAPI: Config = {
     BASE: 'https://api.trello.com/1',
-    VERSION: '0.0.1',
-    WITH_CREDENTIALS: false,
-    CREDENTIALS: 'include',
+    KEY: undefined,
     TOKEN: undefined,
-    USERNAME: undefined,
-    PASSWORD: undefined,
     HEADERS: undefined,
     ENCODE_PATH: undefined,
 };
