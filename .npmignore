@@ -1,6 +1,16 @@
+# Build Files
 node_modules
-src
+generated
 scraper
-client
+tsconfig.json
+
+# Test Files
+test
+jest.config.ts
+
+# GitHub
+.github
+
+#Code Editors
 .vscode
 .idea
