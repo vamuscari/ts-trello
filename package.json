@@ -1,6 +1,6 @@
 {
   "name": "ts-trello",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Typescript API wrapper for Trello",
   "homepage": "https://github.com/vamuscari/ts-trello#readme",
   "repository": {
